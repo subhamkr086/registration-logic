@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://kit.fontawesome.com/564528bf08.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="Registration.css">
+
+</head>
+<body>
+    
+    <main class="fancy">
+        <div class="heading-container" style="padding-top: 50px;">
+            <div class="heading">
+                Registration Fee Calculator!!
+            </div>
+        </div>
+        <section class="demo">
+          <div class="box">
+            <h2>Step1:- <br /></h2><small style="font-size: large;">You need to select the events that you are Interested in. You can select 3 events for the regular fees (2 Central Events and 3 Departmental Event Only) .Further selections would require an additional fee of Rs 25 per Event. Total number of selection of Events should not exceed 8.</small>
+            <p style="font-size: medium;">
+              <label for="BCREC">
+                <input id="BCREC" name="yaybox" type="checkbox" value="BCREC" />
+                <span>Student of BCREC</span>
+              </label>
+            </p>
+            <p style="font-size: medium;">
+              <label for="Club">
+                <input id="Club" name="yaybox" type="checkbox" value="Club" />
+                <span>Member of any Professional Body in BCREC(A discount of Rs50 will be provided to them)</span>
+              </label>
+            </p>
+            
+            <div id="showFee" style="font-size: large;"></div>
+
+            <hr />
+          </div>
+
+          <!-- Central Events -->
+          <div class="Central" style="font-size: medium;">
+            <h2>Step2:- Central Events <br /></h2><small style="font-size: large;">Select any 2 for The Regular fees(Addition Rs.25 will be charged for further Selections.A maximum of 2 Adiitional Central Events can be selected. A maximum of 3 Candidates will be allowed in group based Events except Game Of Thrones where 4 are allowed)</small>
+            <p>
+              <label for="Techackatron">
+                <input id="Techackatron" name="yaybox" type="checkbox" value="Techackatron" />
+                <span>Techackatron</span>
+              </label>
+            </p>
+            <p>
+              <label for="Flashextempo">
+                <input id="Flashextempo" name="yaybox" type="checkbox" value="Flashextempo" />
+                <span>Flashextempo</span>
+              </label>
+            </p>
+            <p>
+              <label for="Onspotquiz">
+                <input id="Onspotquiz" name="yaybox" type="checkbox" value="Onspotquiz" />
+                <span>Onspotquiz</span>
+              </label>
+            </p>
+            <p>
+              <label for="CineTrix and animation movie">
+                <input id="CineTrix and animation movie" name="yaybox" type="checkbox" value="CineTrix and animation movie" />
+                <span>CineTrix and animation movie</span>
+              </label>
+            </p>
+            <p>
+              <label for="Photography">
+                <input id="Photography" name="yaybox" type="checkbox" value="Photography" />
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label for="Game Of Thrones">
+                <input id="Game Of Thrones" name="yaybox" type="checkbox" value="Game Of Thrones" />
+                <span>Game Of Thrones</span>
+              </label>
+            </p>
+            <p>
+              <label for="Papyrus">
+                <input id="Papyrus" name="yaybox" type="checkbox" value="Papyrus" />
+                <span>Papyrus</span>
+              </label>
+            </p>
+            <p>
+              <label for="Techmodels">
+                <input id="Techmodels" name="yaybox" type="checkbox" value="Techmodels" />
+                <span>Techmodels</span>
+              </label>
+            </p>
+            <p>
+              <label for="Buisness Model Canvas">
+                <input id="Buisness Model Canvas" name="yaybox" type="checkbox" value="Buisness Model Canvas" />
+                <span>Buisness Model Canvas</span>
+              </label>
+            </p>
+
+            
+            <div id="additionalFee" style="font-size: large;"></div>
+
+            <hr />
+          </div>
+
+        <!-- Departmental Event -->
+          <div class="Department" style="font-size: medium;">
+            <h2>Step3:- Departmental Events <br /></h2><small style="font-size: large;">Select any 1 for The Regular fees(Addition Rs.25 will be charged for further Selections.A maximum of 2 Adiitional Departmental Events can be selected.)</small>
+            <p>
+              <label for="RoboTrix">
+                <input id="RoboTrix" name="yaybox" type="checkbox" value="RoboTrix" />
+                <span>RoboTrix</span>
+              </label>
+            </p>
+            <p>
+              <label for="Technovation(Poster Presentation) ">
+                <input id="Technovation(Poster Presentation)" name="yaybox" type="checkbox" value="Technovation(Poster Presentation)" />
+                <span>Technovation(Poster Presentation)</span>
+              </label>
+            </p>
+            <p>
+              <label for="Tricky Circuits">
+                <input id="Tricky Circuits" name="yaybox" type="checkbox" value="Tricky Circuits" />
+                <span>Tricky Circuits</span>
+              </label>
+            </p>
+            <p>
+              <label for="CineTrix and animation movie">
+                <input id="CineTrix and animation movie" name="yaybox" type="checkbox" value="CineTrix and animation movie" />
+                <span>CineTrix and animation movie</span>
+              </label>
+            </p>
+            <p>
+              <label for="TECH-IDEA (Poster Presentation) ">
+                <input id="TECH-IDEA (Poster Presentation)" name="yaybox" type="checkbox" value="TECH-IDEA (Poster Presentation)" />
+                <span>TECH-IDEA (Poster Presentation)</span>
+              </label>
+            </p>
+            <p>
+              <label for="Embeded-IT">
+                <input id="Embeded-IT" name="yaybox" type="checkbox" value="Embeded-IT" />
+                <span>Embeded-IT</span>
+              </label>
+            </p>
+            <p>
+              <label for="Devcon">
+                <input id="Devcon" name="yaybox" type="checkbox" value="Devcon" />
+                <span>Devcon</span>
+              </label>
+            </p>
+            <p>
+              <label for="Web-D">
+                <input id="Web-D" name="yaybox" type="checkbox" value="Web-D" />
+                <span>Web-D</span>
+              </label>
+            </p>
+            <p>
+              <label for="WannaCode">
+                <input id="WannaCode" name="yaybox" type="checkbox" value="WannaCode" />
+                <span>WannaCode</span>
+              </label>
+            </p>
+            <p>
+                <label for="HackMaze">
+                  <input id="HackMaze" name="yaybox" type="checkbox" value="HackMaze" />
+                  <span>HackMaze</span>
+                </label>
+            </p>
+            <p>
+                <label for="Dare To Debug">
+                  <input id="Dare To Debug" name="yaybox" type="checkbox" value="Dare To Debug" />
+                  <span>Dare To Debug</span>
+                </label>
+            </p>
+            <p>
+                <label for="Blind Code">
+                  <input id="Blind Code" name="yaybox" type="checkbox" value="Blind Code" />
+                  <span>Blind Code</span>
+                </label>
+            </p>
+            <p>
+                <label for="System Design">
+                  <input id="System Design" name="yaybox" type="checkbox" value="System Design" />
+                  <span>System Design</span>
+                </label>
+            </p>
+            <p>
+                <label for="Graphic Design">
+                  <input id="Graphic Design" name="yaybox" type="checkbox" value="Graphic Design" />
+                  <span>Graphic Design</span>
+                </label>
+            </p>
+            <p>
+                <label for="Language Identification">
+                  <input id="Language Identification" name="yaybox" type="checkbox" value="Language Identification" />
+                  <span>Language Identification</span>
+                </label>
+            </p>
+            <p>
+                <label for="AutoCAD design contest">
+                  <input id="AutoCAD design contest" name="yaybox" type="checkbox" value="AutoCAD design contest" />
+                  <span>AutoCAD design contest</span>
+                </label>
+            </p>
+            <p>
+                <label for="Mechvation">
+                  <input id="Mechvation" name="yaybox" type="checkbox" value="Mechvation" />
+                  <span>Mechvation</span>
+                </label>
+            </p>
+            <p>
+                <label for="Brug It">
+                  <input id="Brug It" name="yaybox" type="checkbox" value="Brug It" />
+                  <span>Brug It</span>
+                </label>
+            </p>
+            <div id="additionalFeeDep" style="font-size: large;"></div>
+
+            <hr />
+          </div> 
+          <div>
+            <h2 id="totalAmount"></h2>
+            <hr />
+          </div>
+        </section>
+        
+    </main>
+
+</body>
+
+<script>
+    var fee = 400;
+    var additional = 0;
+    var additionalDep = 0;
+
+    displayFee()
+
+    // step1
+    const checkbox1 = document.getElementById('BCREC');
+    const checkbox2 = document.getElementById('Club');
+    checkbox1.addEventListener('change', function() {
+        if (this.checked) {
+            fee -= 100;
+        }else{
+            fee += 100;
+        }
+        displayFee()
+        displayTotal()
+    });
+    checkbox2.addEventListener('change', function() {
+        if (this.checked) {
+            fee -= 50;
+        }else{
+            fee += 50;
+        }
+        displayFee()
+        displayTotal()
+    });
+
+
+    // step 2 central 
+    // Get all checkboxes within the central container
+    const checkboxes = document.querySelectorAll('.Central input[type="checkbox"]');
+
+    // Function to count checked checkboxes of central event
+    function countChecked() {
+        const checkedCheckboxes = document.querySelectorAll('.Central input[type="checkbox"]:checked');
+        var count = checkedCheckboxes.length;
+
+        // Limit the number of checked checkboxes
+        if (count > 4) {
+            count--;
+            this.checked = false; // Prevent checking more checkboxes
+
+            // calling alert function
+            customAlert.alert('You can select a maximum of 4 central events.')
+        }
+
+        // console.log(count)
+        
+        if(count>2) additional = (count-2)*25;
+        else additional = 0;
+        document.getElementById("additionalFee").textContent = " Additional Fee For Central Event: " + additional;
+        displayTotal();
+    }
+
+    // Add event listeners to each checkbox for change event
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', countChecked);
+    });
+
+    // Initial count when the page loads
+    countChecked();
+
+
+    // Step 3
+    // Get all checkboxes within the department container
+    const checkboxesDep = document.querySelectorAll('.Department input[type="checkbox"]');
+
+    // Function to count checked checkboxes of central event
+    function countCheckedDep() {
+        const checkedCheckboxesDep = document.querySelectorAll('.Department input[type="checkbox"]:checked');
+        var count = checkedCheckboxesDep.length;
+        
+        // Limit the number of checked checkboxes
+        if (count > 3) {
+            count--;
+            this.checked = false; // Prevent checking more checkboxes
+
+            
+            // calling alert function
+            customAlert.alert('You can select a maximum of 3 dep events.')
+        }
+
+        // console.log(count)
+        
+        if(count>1) additionalDep = (count-1)*25;
+        else additionalDep = 0;
+        document.getElementById("additionalFeeDep").textContent = " Additional Fee For Departmental Event: " + additionalDep;
+        displayTotal();
+    }
+
+    // Add event listeners to each checkbox for change event
+    checkboxesDep.forEach((checkboxDep) => {
+        checkboxDep.addEventListener('change', countCheckedDep);
+    });
+
+    // Initial count when the page loads
+    countCheckedDep();
+
+
+    function displayFee() {
+        document.getElementById("showFee").textContent = "Your Registration Fees is: " + fee;
+    }
+
+    displayTotal();
+    // display total amount
+    function displayTotal(){
+        const total = fee+additional+additionalDep;
+        document.getElementById("totalAmount").textContent = "Total Payable Amount: " + total;
+    }
+
+
+    // alert box js
+    function CustomAlert(){
+        this.alert = function(message){
+            document.body.innerHTML = document.body.innerHTML + '<div id="dialogbox" class="slit-in-vertical"><div><div id="dialogboxbody"></div><div id="dialogboxfoot"></div></div></div>';
+
+            let dialogbox = document.getElementById('dialogbox');
+            
+            
+            dialogbox.style.top = "100px";
+
+            dialogbox.style.display = "block";
+            dialogbox.style.position = 'fixed';
+            dialogbox.style.transform = 'translate(-50%, -50%)';
+            
+
+            document.getElementById('dialogboxbody').innerHTML = message;
+            document.getElementById('dialogboxfoot').innerHTML = '<button class="pure-material-button-contained active" onclick="customAlert.ok()">OK</button>';
+        }
+        
+        this.ok = function(){
+            document.getElementById('dialogbox').style.display = "none";
+            window.location.reload()
+        }
+    }
+
+    let customAlert = new CustomAlert();
+</script>
+</html>
